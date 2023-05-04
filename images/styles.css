@@ -1,0 +1,106 @@
+/*Image by <a href="https://www.freepik.com/free-vector/gradient-tropical-leaves-background_13802827.htm#page=21&query=tropical%20plants&position=29&from_view=search&track=ais">Freepik</a>*/
+HTML{
+    background-image: url(Plants_2.png);
+    background-size: cover;
+    background-color: #003333;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffcc66;
+    font-family: 'Poiret One', cursive;
+}
+/*NAVIGATION*/
+.nav-item{
+    margin: auto;
+    text-align: center;
+    flex: 1 0 1vw; /*respectively flex-grow:1; flex-shrink:0; flex-basis:1vw*/
+}
+/*INTRODUCTION*/
+#main-info{
+    text-align: center;
+    margin: 1% 25%;
+    width: 54%;
+    height: 40%;
+    text-transform: uppercase;
+}
+h1{
+    font-size: 70px;
+    font-size-adjust: 0.5;
+    font-family: 'Josefin Slab', serif;
+}
+h2{
+    font-size: 30px;
+    font-size-adjust: 0.5;
+    font-family: 'Poiret One', cursive;
+    border-bottom: #ffcc66 1px solid;
+}
+.photo{
+    color: #ffcc66;
+    font-size: 30px;
+    width: 100%;
+    height: auto;
+    max-width: 20vw;
+    margin: 4% 42%;
+    text-align: center;
+    border-radius: 50%;
+}
+nav, footer{
+    margin: 2% 24%;
+    text-transform: uppercase;
+    font-family: 'Josefin Slab bold', serif;
+    min-font-size: 20px;
+    font-size: 1.6vw;
+    max-font-size: 30px;
+    display: flex;
+    width: 54%;
+    height: 6vh;
+}
+.foot-item{
+    margin: auto;
+    text-align: center;
+    flex: 1 0 1vw;
+}
+.container{
+    display: flex;
+    flex-flow: column; /*nowe wspisy na poczatku, stare na koncu*/
+    flex-wrap: wrap;
+}
+.cont-item{
+    margin: 2%;
+}
+#about, #portfolio{
+    font-size: 20px;
+    height: 45%;
+    width: 50%;
+    margin: 15px 25%;
+    border: #ffcc66 1px solid;
+    padding: 20px;
+}
+p{
+    font-size: 20px;
+    font-size-adjust: 0.5;
+    text-align: justify;
+}
+.project{
+    width: 100%;
+    height: auto;
+    max-width: 10vw;
+    margin: 2%;
+}
+@keyframes change-image-opacity{
+    from{
+        opacity:10%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+a:link, a:visited{
+    text-decoration: none;
+    color: #ffcc66;
+}
+a:hover{
+    color: #003333;
+    padding: 5px 40px;
+    background-color: #ffcc66;
+    animation: change-image-opacity 1s;
+}
